@@ -14,7 +14,10 @@
 
     <div class="header__image">
 
-      <img class="menu__icon" src="svg\burger-menu.svg" type="svg">
+      <div class="burger__menu">
+        <button class="menu__icon"></button>
+        <span class="visually_hidden">Меню сайта</span>
+      </div>
 
       <div class="header__content">
         <div class="noemi_logo">
@@ -22,8 +25,6 @@
             <img class="noemi_svg" src="svg\noemi-logo.svg" type="svg">
           </a>
         </div>
-
-
 
         <nav class="main__list">
           <ul class="menu__list">
@@ -48,12 +49,14 @@
 
   <main class="content">
 
-    <input type="checkbox" id="popup__close" class="popup__close_btn">
-    <label for="popup__close" class="popup__close">
-      <img class="close" src="svg/close.svg">
-    </label>
+<input type="checkbox" id="popup__close" class="popup__close_btn">
 
     <div class="popup__back">
+      
+      <label for="popup__close" class="popup__close">
+        <img class="close" src="svg/close.svg">
+        <span class="visually_hidden">Закрыть окно</span>
+      </label>
 
       <form class="popup">
 
@@ -76,13 +79,14 @@
 
             <input type="radio" id="mailing__yes" class="mailing__yes" name="radiobuttons">
             <label for="mailing__yes" class="yes">
+              <p class="popup__text rb_chose">Да</p>
             </label>
-            <p class="popup__text rb_chose">Да</p>
+
 
             <input type="radio" id="mailing__no" class="mailing__no" name="radiobuttons">
             <label for="mailing__no" class="no">
+              <p class="popup__text rb_chose">Нет</p>
             </label>
-            <p class="popup__text rb_chose">Нет</p>
 
           </div>
 
@@ -108,7 +112,7 @@
               <li class="trends__tag"><a href="#" class="tag_link">lifestyle</a></li>
               <li class="trends__tag"><a href="#" class="tag_link">interior</a></li>
             </ul>
-            <h3 class="trends_text">Сейчас в тренде: сад на подоконнике</h3>
+            <h3 class="trends_text"><a href="#" class="tag_link t_text">Сейчас в тренде: сад на подоконнике</a></h3>
           </div>
         </div>
 
@@ -117,7 +121,7 @@
             <ul class="trends_tags">
               <li class="trends__tag"><a href="#" class="tag_link">food</a></li>
             </ul>
-            <h3 class="trends_text">Сыры на красивых картинках из интернета: какие они на вкус?</h3>
+            <h3 class="trends_text"><a href="#" class="tag_link t_text">Сыры на красивых картинках из интернета: какие они на вкус?</a></h3>
           </div>
         </div>
 
@@ -127,7 +131,7 @@
               <li class="trends__tag"><a href="#" class="tag_link">lifestyle</a></li>
               <li class="trends__tag"><a href="#" class="tag_link">travel</a></li>
             </ul>
-            <h3 class="trends_text">Собираемся в первый поход в горы</h3>
+            <h3 class="trends_text"><a href="#" class="tag_link t_text">Собираемся в первый поход в горы</a></h3>
           </div>
         </div>
 
@@ -137,7 +141,7 @@
               <li class="trends__tag"><a href="#" class="tag_link">food</a></li>
               <li class="trends__tag"><a href="#" class="tag_link">health</a></li>
             </ul>
-            <h3 class="trends_text">Сейчас в тренде: сколько витамина С в лимонах?</h3>
+            <h3 class="trends_text"><a href="#" class="tag_link t_text">Сейчас в тренде: сколько витамина С в лимонах?</a></h3>
           </div>
         </div>
       </div>
@@ -149,11 +153,11 @@
         <article class="bigpost__item">
           <img class="bigpost__image" src="images/last-post1.jpg" alt="Иллюстрация пейзажа">
           <div class="bigpost">
-            <div class="bigpost__tags">
+            <ul class="bigpost__tags">
               <li class="post__tag"><a href="#" class="tag_link">travel</a></li>
               <li class="post__tag"><a href="#" class="tag_link">health</a></li>
-            </div>
-            <h2 class="post__head post__title">10 мест, ради которых стоит проснуться на рассвете</h2>
+            </ul>
+            <h2 class="post__head"><a href="#" class="post__title">10 мест, ради которых стоит проснуться на рассвете</a></h2>
             <div class="post__info">
               <p class="post__data">10 июня 2019</p>
               <p class="post__author">Неизвестный автор</p>
@@ -166,11 +170,11 @@
         <article class="bigpost__item">
           <img class="bigpost__image" src="images/last-post2.jpg" alt="Иллюстрация позы для йоги">
           <div class="bigpost">
-            <div class="bigpost__tags">
+            <ul class="bigpost__tags">
               <li class="post__tag"><a href="#" class="tag_link">health</a></li>
               <li class="post__tag"><a href="#" class="tag_link">lyfestyle</a></li>
-            </div>
-            <h2 class="post__head post__title">йога для начинающих в домашних условиях</h2>
+            </ul>
+            <h2 class="post__head"><a href="#" class="post__title">йога для начинающих в домашних условиях</a></h2>
             <div class="post__info">
               <p class="post__data">10 июня 2019</p>
               <p class="post__author">Неизвестный автор</p>
@@ -183,10 +187,10 @@
         <article class="bigpost__item">
           <img class="bigpost__image" src="images/last-post3.jpg" alt="Иллюстрация музыкального фестиваля">
           <div class="bigpost">
-            <div class="bigpost__tags">
+            <ul class="bigpost__tags">
               <li class="post__tag"><a href="#" class="tag_link">music</a></li>
-            </div>
-            <h2 class="post__head post__title">лучшие музыкальные фестивали этого лета</h2>
+            </ul>
+            <h2 class="post__head"><a href="#" class="post__title">лучшие музыкальные фестивали этого лета</a></h2>
             <div class="post__info">
               <p class="post__data">10 июня 2019</p>
               <p class="post__author">Неизвестный автор</p>
@@ -204,7 +208,7 @@
               <li class="post__tag"><a href="#" class="tag_link">lyfestyle</a></li>
               <li class="post__tag"><a href="#" class="tag_link">food</a></li>
             </ul>
-            <h2 class="post__head post__title">наукоёмкий подход к кулинарии</h2>
+            <h2 class="post__head"><a href="#" class="post__title">наукоёмкий подход к кулинарии</a></h2>
             <div class="post__info">
               <p class="post__data">10 июня 2019</p>
               <p class="post__author">Неизвестный автор</p>
@@ -222,7 +226,7 @@
               <li class="post__tag"><a href="#" class="tag_link">interior</a></li>
               <li class="post__tag"><a href="#" class="tag_link">art</a></li>
             </ul>
-            <h2 class="post__head post__title">делаем модные принты на подушках для интерьера</h2>
+            <h2 class="post__head"><a href="#" class="post__title">делаем модные принты на подушках для интерьера</a></h2>
             <div class="post__info">
               <p class="post__data">10 июня 2019</p>
               <p class="post__author">Неизвестный автор</p>
@@ -313,27 +317,27 @@
           <ul class="topics_list">
             <li class="topics_item">
               <a class="topic" href="#">Красота</a>
-              <a class="topic_count" href="#"><sup>12</sup></a>
+              <div class="topic_count"><span class="sup">12</span></div>
             </li>
             <li class="topics_item">
               <a class="topic" href="#">Здоровье</a>
-              <a class="topic_count" href="#"><sup>4</sup></a>
+              <div class="topic_count"><span class="sup">4</span></div>
             </li>
             <li class="topics_item">
               <a class="topic" href="#">Образ жизни</a>
-              <a class="topic_count" href="#"><sup>145</sup></a>
+              <div class="topic_count"><span class="sup">145</span></div>
             </li>
             <li class="topics_item">
               <a class="topic" href="#">Музыка</a>
-              <a class="topic_count" href="#"><sup>28</sup></a>
+              <div class="topic_count"><span class="sup">28</span></div>
             </li>
             <li class="topics_item">
               <a class="topic" href="#">Спорт</a>
-              <a class="topic_count" href="#"><sup>62</sup></a>
+              <div class="topic_count"><span class="sup">62</span></div>
             </li>
             <li class="topics_item">
               <a class="topic" href="#">Йога</a>
-              <a class="topic_count" href="#"><sup>8</sup></a>
+              <div class="topic_count"><span class="sup">8</span></div>
             </li>
           </ul>
         </article>
